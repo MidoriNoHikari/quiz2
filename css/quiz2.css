@@ -33,3 +33,25 @@ section:hover {
 ul {
 	list-style: none;
 }
+
+button.acc {
+  background-color: #BABABA;
+  color: #565656;
+  padding: 10px;
+  transition: 0.4s;
+  width: 100%;
+}
+
+button.acc.active, button.acc:hover {
+  background-color: #CDCDCD;
+}
+
+div.panel {
+  background-color: white;
+  display: none;
+  padding: 0 10px;
+}
+
+div.panel.show {
+  display: block;
+}
