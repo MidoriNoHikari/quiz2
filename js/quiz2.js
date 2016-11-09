@@ -38,6 +38,18 @@ for (i = 0; i < accordion.length; i++)
       }
 	});
 	
+	$("#fader").click(function() {
+		$("body").children().fadeOut(1000, function(){
+		$("body").append("<p> Goodbye! </p>");
+		});
+		//for some reason the append happens a few times before everything fades out
+	});
+
+	$("#d20").click(function() {
+	  var number = Math.floor(Math.random() * 20) + 1;
+	  $("#rolled").append("<br> " + number + "<br>");
+	});
+	
 	console.log("this is a message for you!!!");
 })(jQuery);
 
